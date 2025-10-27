@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jaiveer M G — Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo"><var>Jaiveer M G</var></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <h1>Hi, I'm <span>Jaiveer M G</span> 👋 </h1>
+        <div class="role">Software Developer & Designer | Exploring New Opportunities</div>
+        <p class="intro-text">
+          B.Sc. Computer Science graduate focused on building clean, maintainable full-stack applications using Python and cloud services. I contribute across frontend, backend, and integration tasks within team projects.
+        </p>
+        <div class="buttons">
+          <a href="#projects" class="btn">View My Work</a>
+          <a href="#contact" class="btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/photo 1.jpg" alt="Profile Photo">
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        A results-oriented B.Sc. Computer Science graduate with practical experience in Python full-stack development and Firebase integration. Comfortable across the stack — from system-level scripting to responsive web interfaces.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <div class="skill-list">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">SQL</div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>
+            LabMate – Real-Time Lab Monitoring System 
+            <span class="team-note">(Team Project)</span>
+          </h3>
+          <div class="project-meta">
+            <div class="tech">
+              Tech: Python, Flask, Firebase, psutil, pygetwindow, pywin32, threading, HTML, CSS, JavaScript, Bootstrap
+            </div>
+            <div class="links">
+              <a href="https://drive.google.com/drive/folders/1HYOKW60p-o8XQX48Ft_BKBZ6rfWV1yNc?usp=drive_link" target="_blank">View Code</a>
+            </div>
+          </div>
+
+          <div class="project-details">
+            <div class="pd-box">
+              <h4>What the Desktop Software Does</h4>
+              <p>
+                The Python desktop client runs on each lab machine to continuously capture the active window title, top network-consuming process, and upload/download speeds using <strong>psutil</strong> and <strong>pygetwindow</strong>. Data is pushed to <strong>Firebase Realtime Database</strong> in real time. The client runs background threads to ensure low overhead and uses a minimal Tkinter UI for configuration.
+              </p>
+            </div>
+
+            <div class="pd-box">
+              <h4>What the Web App Does</h4>
+              <p>
+                The Flask-based admin dashboard authenticates staff via <strong>Firebase Authentication</strong>, reads live system data from Firebase, and displays a lab overview with per-system activity and bandwidth. Administrators can remotely trigger controls (e.g., put all systems to sleep) and monitor recent activity to manage labs effectively.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact" >
+     <center>
+        <h2>Contact Me</h2>
+        <p>Let's collaborate — I'm open to internships and entry-level roles.</p>
+    </center> 
+      <div class="socials">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=mgjaiveer05@gmail.com" target="_blank" class="links">Email</a>
+        <a href="https://github.com/jaiveer0873ab" target="_blank" class="links">GitHub</a>
+        <a href="https://linkedin.com/in/jaiveer-m-g/" target="_blank" class="links">LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2025 Jaiveer M G. All rights reserved.</p>
+    </footer>
+  </main>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
