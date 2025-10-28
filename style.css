@@ -1,9 +1,9 @@
 :root {
-  --bg: #faf6f1;
-  --card: #ffffff;
-  --muted: #6b7280;
-  --accent: #ff914d;
-  --glass: rgba(0, 0, 0, 0.05);
+  --bg: #f9f8ff;              /* Soft white with a hint of violet */
+  --card: #ffffff;            /* Clean white for cards */
+  --muted: #6b6b80;           /* Muted gray with subtle violet undertone */
+  --accent: #7c3aed;          /* Professional violet accent */
+  --glass: rgba(124, 58, 237, 0.08); /* Soft violet translucent layer */
 
   font-family: 'Poppins', sans-serif;
   color: #1a1a1a;
@@ -39,6 +39,7 @@ nav a {
   text-decoration: none;
   margin-left: 18px;
   font-weight: 500;
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -103,24 +104,26 @@ nav a:hover {
 }
 
 .btn:hover {
-  opacity: 0.85;
+  opacity: 0.9;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
 }
 
 .btn-outline {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  color: var(--muted);
-}
-
-.btn-outline:hover {
-  border-color: var(--accent);
+  border: 1px solid rgba(124, 58, 237, 0.3);
   color: var(--accent);
 }
 
+.btn-outline:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+/* Hero Image */
 .hero-image img {
   width: 100%;
   max-width: 320px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.15);
 }
 
 /* Sections */
@@ -129,6 +132,7 @@ section {
   padding: 22px;
   background: #ffffff;
   border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.05);
 }
 
 h2 {
@@ -152,7 +156,7 @@ h2 {
   background: var(--glass);
   padding: 8px 12px;
   border-radius: 8px;
-  color: var(--muted);
+  color: var(--accent);
   font-weight: 600;
 }
 
@@ -167,7 +171,7 @@ h2 {
   background: var(--card);
   padding: 18px;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.08);
 }
 
 .project-card h3 {
@@ -204,13 +208,14 @@ h2 {
   border-radius: 8px;
   text-decoration: none;
   background: var(--glass);
-  color: var(--muted);
+  color: var(--accent);
   margin-right: 8px;
   font-weight: 600;
 }
 
 .links a:hover {
-  color: var(--accent);
+  background: var(--accent);
+  color: #ffffff;
 }
 
 /* Project Details */
@@ -226,7 +231,7 @@ h2 {
   background: var(--glass);
   padding: 14px;
   border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+  box-shadow: 0 4px 14px rgba(124, 58, 237, 0.05);
 }
 
 .pd-box h4 {
